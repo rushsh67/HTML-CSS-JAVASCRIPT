@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Responsive Resume</title>
+        <!-- <link rel="stylesheet" href="style.css" /> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-content {
+    margin: 20px auto;
+    width: 90%;
+    min-height: 1000px;
+    display: grid;
+    grid-template-columns: 300px 700px;
+}
+
+.left-section{
+    grid-column: span 1;
+    background-color: goldenrod;
+}
+
+.right-section{
+    background-color: rgb(229, 203, 156);
+}
+@media screen and (max-width: 673px) {
+    .main-content{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+.left-content{
+    padding: 1rem;
+}
+
+.profile-image img{
+    display: block;
+    margin: auto;
+    border-radius: 30%;
+    border: 5px solid white;
+    width: 60%;
+}
+
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+    text-transform: uppercase;
+}
+
+.designation{
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.02px;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: rgb(8, 62, 33);
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.social-media {
+    display: flex;
+    background-color: inherit;
+}
+  
+.social-media > li {
+    margin: 5px;
+    padding: 20px;
+    font-size: 20px;
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    text-transform: uppercase;
+    margin-top: 2rem; 
+}
+
+.skill-name {
+    font-size: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+.skill-progress{
+    margin-bottom: 00.65rem;
+    background-color: white;
+    border-radius: 5px;
+}
+.progress-bar{
+    border: 1px white solid;
+    height: 4px;
+    color: white;
+    background-color: lawngreen;
+    border-radius: 5px;
+}
+
+.right-main-content{
+    padding: 2rem 3rem;
+}
+
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.para{
+    padding: 0.5rem;
+
+}
+
+
+        </style>
+    </head>
+    <body>
+        <header></header>
+        <main class="main-content">
+            <section class="left-section">
+                <div class="left-content">
+                    <div class="profile-details">
+                        <div class="profile-image">
+                            <img src="https://media.istockphoto.com/photos/headshot-portrait-of-smiling-ethnic-businessman-in-office-picture-id1300512215?k=20&m=1300512215&s=612x612&w=0&h=enNAE_K3bhFRebyOAPFdJtX9ru7Fo4S9BZUZZQD3v20="
+                            alt="Roman Stark"/>
+                        </div>
+                    </div>
+                    <h2 class="name">Roman Richer</h2>
+                    <h4 class="designation">SDE 1</h4>
+                    <hr/>
+                    <p class="description">
+                        MERN Stack Developer | Python-Django | Full Stack Developer
+                    </p>
+                    <div class="contact-item">
+                        <div class="social-media">
+                            <li class="icon"><a href="linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="icon"><a href="github.com"><i class="fa fa-github"></i></a></li>
+                            <li class="icon"><a href="facebook.com"><i class="fa fa-facebook"></i></a></li>
+                            <li class="icon"><a href="twitter.com"><i class="fa fa-twitter"></i></a></li>
+                        </div>
+                        <div class="personal-details">
+                            <li class="icon"><i class="fa fa-envelope"> johndoe@email.com </i></li>
+                            <li class="icon"><i class="fa fa-phone"> +91 9876543210</i></li>
+                            <li class="icon"><i class="fa fa-home"> Sector-1, Navi Mumbai, Maharashtra</i></li>
+                        </div>
+                        
+                        <h2 class="skills">SKILLS</h2>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <h3>HTML</h3>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <h3>CSS</h3>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <h3>JavaScript</h3>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 87%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <h3>MongoDB</h3>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <h3>EXPRESS</h3>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 87%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <h3>REACT JS</h3>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <h3>NODE.JS</h3>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="right-section">
+                <div class="right-main-content">
+                    <section class="about sect">
+                        <h2 class="right-title">ABOUT ME</h2>
+                        <p class="para">Lorem ipsum dolor, sit amet consectetur 
+                            adipisicing elit. Recusandae nihil dignissimos 
+                            ullam exercitationem repudiandae impedit laborum ad,
+                             magni, minima ipsam itaque repellendus rerum quo ipsa,
+                              explicabo voluptate rem. Deleniti, dolorum.
+                              Lorem ipsum dolor, sit amet consectetur 
+                            adipisicing elit. Recusandae nihil dignissimos 
+                            ullam exercitationem repudiandae impedit laborum ad,
+                             magni, minima ipsam itaque repellendus rerum quo ipsa,
+                              explicabo voluptate rem.
+                        </p>
+                    </section>
+                    <section class="education sect">
+                        <h2 class="right-title">EDUCATION</h2>
+                        <p class="para">Lorem ipsum dolor, sit amet consectetur 
+                            adipisicing elit. Recusandae nihil dignissimos 
+                            ullam exercitationem repudiandae impedit laborum ad,
+                             magni, minima ipsam itaque repellendus rerum quo ipsa,
+                              explicabo voluptate rem. Deleniti, dolorum.
+                        </p>
+                    </section>
+                    <section class="experience sect">
+                        <h2 class="right-title">EXPERIENCE</h2>
+                        <p class="para">Lorem ipsum dolor, sit amet consectetur 
+                            adipisicing elit. Recusandae nihil dignissimos 
+                            ullam exercitationem repudiandae impedit laborum ad,
+                             magni, minima ipsam itaque repellendus rerum quo ipsa,
+                              explicabo voluptate rem. Deleniti, dolorum.
+                              Lorem ipsum dolor, sit amet consectetur 
+                            adipisicing elit. Recusandae nihil dignissimos 
+                            ullam exercitationem repudiandae impedit laborum ad,
+                             magni, minima ipsam itaque repellendus rerum quo ipsa,
+                              explicabo voluptate rem.
+                        </p>
+                    </section>
+                    <section class="projects">
+                        <h2 class="right-title">PROJECTS</h2>
+                        <p class="para">Lorem ipsum dolor, sit amet consectetur 
+                            adipisicing elit. Recusandae nihil dignissimos 
+                            ullam exercitationem repudiandae impedit laborum ad,
+                             magni, minima ipsam itaque repellendus rerum quo ipsa,
+                              explicabo voluptate rem. Deleniti, dolorum.
+                              Lorem ipsum dolor, sit amet consectetur 
+                            adipisicing elit. Recusandae nihil dignissimos 
+                            ullam exercitationem repudiandae impedit laborum ad,
+                             magni, minima ipsam itaque repellendus rerum quo ipsa,
+                              explicabo voluptate rem.
+                        </p>
+                        <p class="para">Lorem ipsum dolor, sit amet consectetur 
+                            adipisicing elit. Recusandae nihil dignissimos 
+                            ullam exercitationem repudiandae impedit laborum ad,
+                             magni, minima ipsam itaque repellendus rerum quo ipsa,
+                              explicabo voluptate rem. Deleniti, dolorum.
+                              Lorem ipsum dolor, sit amet consectetur 
+                            adipisicing elit. Recusandae nihil dignissimos 
+                            ullam exercitationem repudiandae impedit laborum ad,
+                             magni, minima ipsam itaque repellendus rerum quo ipsa,
+                              explicabo voluptate rem.
+                        </p>
+                    </section>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>
